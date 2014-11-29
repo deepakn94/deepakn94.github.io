@@ -3,9 +3,6 @@
     <title>Deepak Narayanan</title>
 
     <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   </head>
 
   <body>
@@ -54,7 +51,7 @@
         <br>
         The main goal here is to build the ability to handle atomic, cross-shard transactions into a sharded and replicated key-value store. NoSQL systems are increasingly becoming more popular -- the ability to perform a sequence of operations across multiple records atomically makes these systems even more powerful, and in some cases, makes it possible to use these systems as a substitute for a full-fledged database system.
         <br>
-        To avoid lots of spurious recomputation, our solution avoided the use of de-facto methods such as two-phase commit and two-phase locking and instead made use of a server-side commit protocol called <a href="http://hyperdex.org/warp/"><i>linear transactions</i></a>.
+        To avoid lots of spurious recomputation, our solution avoided the use of de-facto methods such as two-phase commit and two-phase locking and instead made use of a server-side commit protocol called <a href="http://hyperdex.org/warp/"><i>linear transactions</i></a>. We made use of Paxos to ensure all replicas in a replica group perform the same operations in the same order.
         <br>
         A more in-depth writeup of our design is available <a href="assets/papers/6.824.pdf">here</a>.
         <br>
@@ -65,7 +62,7 @@
         <br>
         We designed a scalable distributed server-side password storage system with the objective of forcing adversaries to compromise multiple servers in order to obtain any sensitive information -- we made use of a variation of Shamir's secret sharing scheme to ensure that data stored on any one machine in the system is not sufficient to gain access to a user's secret (in this case, a password).
         <br>
-        Our paper is available <a href="assets/papers/6.858.pdf">here</a>.
+        More details are available <a href="assets/papers/6.858.pdf">here</a>.
         <br>
         <br>
         <b>ATP Tennis Fantasy engine:</b> This was a final project for MIT's Graduate Machine Learning class (6.867).
