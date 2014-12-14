@@ -53,23 +53,23 @@
         Here are some class projects I enjoyed working on at MIT --
         <br>
         <br>
-        <b>"Pattern avoidance" and "Greedy sequences": </b> This past term, I have written a couple of short papers in Mathematics as a part of MIT's Project Lab in Mathematics class (18.821) -- one on <a href="assets/papers/paper2.pdf">avoidance of patterns</a> and another on <a href="assets/papers/paper1.pdf">greedy sequences</a>. We also gave a presentation on our pattern avoidance paper that got a lot of good reviews, slides of which are available <a href="assets/papers/presentation.pdf">here</a>.
+        <b>"Greedy sequences", "Pattern avoidance" and "Almost orthogonal vectors": </b> This past term, I have written a couple of short papers in Mathematics on <a href="assets/papers/paper1.pdf">greedy sequences</a>, <a href="assets/papers/paper2.pdf">avoidance of patterns</a> and <a href="assets/papers/paper3.pdf">almost orthogonal vectors</a>. We also gave a <a href="assets/papers/presentation.pdf">presentation</a> on our pattern avoidance paper.
         <br>
         <br>
         <b>Transactions in a key-value store:</b> This was a final project for MIT's Graduate Distributed Systems class (6.824).
         <br>
-        The main goal here is to build the ability to handle atomic, cross-shard transactions into a sharded and replicated key-value store. NoSQL systems are increasingly becoming more popular -- the ability to perform a sequence of operations across multiple records atomically makes these systems even more powerful, and in some cases, makes it possible to use these systems as a substitute for a full-fledged database system.
+        The main goal here is to add the ability to handle atomic, cross-shard transactions into a sharded and replicated key-value store. NoSQL systems are increasingly becoming more popular -- the ability to perform a sequence of multi-record operations atomically makes these systems even more powerful, and in some cases, a viable substitute for a full-fledged database system.
         <br>
-        To avoid lots of spurious recomputation, our solution avoided the use of de-facto methods such as two-phase commit and two-phase locking and instead made use of a server-side commit protocol called <a href="http://hyperdex.org/warp/"><i>linear transactions</i></a>. We made use of Paxos to ensure all replicas in a replica group perform the same operations in the same order.
+        To avoid spurious recomputation associated with protocols such as Two-phase commit and Two-phase locking, our solution made use of a server-side commit protocol called <a href="http://hyperdex.org/warp/"><i>linear transactions</i></a>. Our implementation was able to guarantee serializability of operations. We used Paxos to ensure all replicas in a replica group perform all operations in the same order.
         <br>
         A more in-depth writeup of our design is available <a href="assets/papers/6.824.pdf">here</a>.
         <br>
         <br>
         <b>SplitSecure:</b> This was a final project for MIT's Graduate Computer Systems Security class (6.858).
         <br>
-        The premise here is that databases of several high profile companies such as Sony, LinkedIn, and Adobe have been compromised in recent years. These security breaches affect millions of users and result in millions of dollars in damage along with a lot of negative publicity -- our project aimed at mitigating the damage caused by such attacks.
+        The premise here is that databases of several high profile companies such as Sony, LinkedIn, and Adobe have been compromised in recent years. These security breaches affect millions of users and result in millions of dollars in damage along with a lot of negative publicity. Our project aimed at mitigating the damage caused by such attacks.
         <br>
-        We designed a scalable distributed server-side password storage system with the objective of forcing adversaries to compromise multiple servers in order to obtain any sensitive information -- we made use of a variation of Shamir's secret sharing scheme to ensure that data stored on any one machine in the system is not sufficient to gain access to a user's secret (in this case, a password).
+        We designed a scalable distributed server-side password storage system with the objective of forcing adversaries to compromise multiple servers in order to obtain any sensitive information -- we made use of a variation of Shamir's secret sharing scheme to ensure that data stored on any one machine in the system is not sufficient to gain access to a user's password.
         <br>
         More details are available <a href="assets/papers/6.858.pdf">here</a>.
         <br>
@@ -88,7 +88,7 @@
     <div id='teaching'>
       <div class='heading'>Teaching</div>
       <div class="content">
-        I really enjoy teaching. I was a Teaching Assistant for <a href="http://stellar.mit.edu/S/course/6/sp14/6.006/"><b>Introduction to Algorithms</b></a> (6.006) in the Spring of 2014, and will be TAing <b>Design and Analysis of Algorithms</b> (6.046) in the Spring of 2015.
+        I was a Teaching Assistant for <a href="http://stellar.mit.edu/S/course/6/sp14/6.006/"><b>Introduction to Algorithms</b></a> (6.006) in the Spring of 2014, and will be TAing <b>Design and Analysis of Algorithms</b> (6.046) in the Spring of 2015.
         <br>
         <br>
         In the past, I have been a Lab Assistant for <b>Elements of Software Construction</b> (6.005) and <b>Introduction to EECS I</b> (6.01).
@@ -108,11 +108,11 @@
         <b>Data infrastructure team, Pinterest:</b>
           I helped build a framework that enabled more decisions made at the company to be data-driven. My main project was trying to improve the reliability and efficiency of Pinterests' pipelined data workflows, by moving most workflows off of Amazon's Elastic MapReduce and onto a new platform called Qubole.
           <br>
-          I also worked on some other smaller projects over the summer, including an addin that allowed our workflow manager to schedule jobs based on priority; and a verification system that allowed us to hold off on running Hadoop jobs until the job's input data was ready to be consumed on S3.
+          I also worked on some other smaller projects over the summer, including an addin that allowed our workflow manager to schedule jobs based on priority; and a verification system that allowed us to hold off on running Hadoop jobs until the job's inputs were ready to be consumed on S3.
         <br>
         <br>
         <b>Multilingual Systems group (MLS), Microsoft Research India:</b>
-          I designed and implemented a type-ahead email search system in C# for Microsoft Outlook. Autocompletion is a fairly well-solved problem in web search since most people search the web in largely the same way, but autocompletion in email search is a lot harder, since different people find different emails more important. I built a machine learning model that given an incomplete query, attempted to find the most relevant emails in the user's inbox.
+          I designed and implemented a type-ahead email search system in C# for Microsoft Outlook. Autocompletion is a fairly well-solved problem in web search since most people search the web in largely the same way, but autocompletion in email search is a lot harder, since different people find different emails more important. I built a machine learning model that given an incomplete query, attempted to find the most relevant emails in the user's inbox (this would help us rank different candidate query completions).
       </div>
     </div>
 
