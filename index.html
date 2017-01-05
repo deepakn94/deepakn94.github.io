@@ -19,9 +19,8 @@
     <div id='nav'>
       <div class='name'>Deepak Narayanan</div>
       <a href='#about'>about me</a>
-      <a href='#projects'>projects</a>
+      <a href='#publications'>publications</a>
       <a href="#teaching">teaching</a>
-      <a href='#internships'>internships</a>
       <a href='#contact'>contact</a>
     </div>
 
@@ -35,56 +34,29 @@
     <div id='about'>
       <div class='heading'>About me</div>
       <div class='content'>
-        <img class='circular' src='assets/headshots/deepak.JPG' align="right">
-        I'm currently a first-year PhD student in the Department of Computer Science at Stanford.
-        Prior to Stanford, I was at MIT where I completed my MEng in Electrical Engineering and Computer Science, and my Bachelor of Science (SB) in Computer Science and Mathematics.
+        <img width="177" height="240" src='assets/headshots/deepak.JPG' align="right" style="margin-left:30px; filter: grayscale(100%);">
+        I am a second-year PhD student in the Department of Computer Science at Stanford University, advised by <a href="https://cs.stanford.edu/~matei/"><b>Prof. Matei Zaharia</b></a>.
+        I am affiliated with the <a href="infolab.stanford.edu"><b>Stanford InfoLab</b></a> and supported by the <a href="https://www.nsfgrfp.org/"><b>National Science Foundation Graduate Research Fellowship</b></a>.
         <br>
         <br>
-        I am interested in most things "big-data" related. I'm currently working with <a href="http://www.bailis.org/">Prof. Peter Bailis</a> on
-        <a href="https://github.com/stanford-futuredata/macrobase">Macrobase</a>, a system that aims to detect "outliers" in real-time data.
-        I have also worked with <a href="http://cs.stanford.edu/~keithw/">Prof. Keith Winstein</a> on <a href="https://github.com/alfalfa/alfalfa">Alfalfa</a>, and with
-        <a href="http://research.microsoft.com/en-us/um/people/amar/">Amar Phanishayee</a> on a system that tries to make machine learning model training a lot faster.
+        My broad research interests include distributed systems and cloud computing -- in particular, I am interested in the Systems problems associated with learning and deploying machine learning
+        models at scale. I currently work on Weld, a system that facilitates fast, parallel code generation. You can read more about Weld <a href="https://cs.stanford.edu/~matei/papers/2017/cidr_weld.pdf"><b>here</b></a>.
         <br>
         <br>
-        You can find a somewhat old copy of my resume <a href="assets/resume.pdf">here</a>.
+        I graduated from MIT in 2015 with a SB in Computer Science and Mathematics and a MEng in EECS.
       </div>
     </div>
 
-    <div id='projects'>
-      <div class='heading'>Projects</div>
+    <div id='publications'>
+      <div class='heading'>Publications</div>
       <div class='content'>
-        Here are some class projects I enjoyed working on at MIT --
+        <a href="https://cs.stanford.edu/~matei/papers/2017/cidr_weld.pdf"><b>Weld: A Common Runtime for High Performance Data Analytics</b></a><br />
+        Shoumik Palkar, James J. Thomas, Anil Shanbhag, Deepak Narayanan, Holger Pirk, Malte Schwarzkopf, Saman Amarasinghe, Matei Zaharia. <br /><i>CIDR 2017.</i> To appear.
         <br>
         <br>
-        <b>"Greedy sequences", "Pattern avoidance" and "Almost orthogonal vectors": </b> This past term, I wrote a couple of short papers in Mathematics on <a href="assets/papers/paper1.pdf">greedy sequences</a>, <a href="assets/papers/paper2.pdf">avoidance of patterns</a> and <a href="assets/papers/paper3.pdf">almost orthogonal vectors</a>. We also gave a <a href="assets/papers/presentation.pdf">presentation</a> on our pattern avoidance paper.
         <br>
-        <br>
-        <b>Transactions in a key-value store:</b> This was a final project for MIT's Graduate Distributed Systems class (6.824).
-        <br>
-        The main goal here is to add the ability to handle atomic, cross-shard transactions into a sharded and replicated key-value store. NoSQL systems are increasingly becoming more popular -- the ability to perform a sequence of multi-record operations atomically makes these systems even more powerful, and in some cases, a viable substitute for a full-fledged database system.
-        <br>
-        To avoid spurious recomputation associated with protocols such as Two-phase commit and Two-phase locking, our solution made use of a server-side commit protocol called <a href="http://hyperdex.org/warp/"><i>linear transactions</i></a>. Our implementation was able to guarantee serializability of operations. We used Paxos to ensure all replicas in a replica group perform all operations in the same order.
-        <br>
-        A more in-depth writeup of our design is available <a href="assets/papers/6.824.pdf">here</a>.
-        <br>
-        <br>
-        <b>SplitSecure:</b> This was a final project for MIT's Graduate Computer Systems Security class (6.858).
-        <br>
-        The premise here is that databases of several high profile companies such as Sony, LinkedIn, and Adobe have been compromised in recent years. These security breaches affect millions of users and result in millions of dollars in damages along with a lot of negative press. Our project aimed at mitigating the damage caused by such attacks.
-        <br>
-        We designed a scalable distributed server-side password storage system with the objective of forcing adversaries to compromise multiple servers in order to obtain any sensitive information -- we made use of a variation of Shamir's secret sharing scheme to ensure that data stored on any one machine in the system is not sufficient to gain access to a user's password.
-        <br>
-        More details are available <a href="assets/papers/6.858.pdf">here</a>.
-        <br>
-        <br>
-        <b>ATP Tennis Fantasy engine:</b> This was a final project for MIT's Graduate Machine Learning class (6.867).
-        <br>
-        We built a Machine Learning engine capable of predicting the winners of a tennis draw as accurately as possible. Our writeup is available <a href="assets/papers/6.867.pdf">here</a>.
-        <br>
-        <br>
-        <b>CollabTeX -- A distributed LaTeX editor:</b> I built this system along with a friend for MIT's Introduction to Software Engineering class. Our project won the "Best optional feature" award.
-        <br>
-        Code can be accessed <a href="https://github.com/deepakn94/CollabTeX">here</a>.
+        <a href="http://arxiv.org/pdf/1603.00567.pdf"><b>MacroBase: Prioritizing Attention in Fast Data</b></a><br />
+        Peter Bailis, Edward Gan, Samuel Madden, Deepak Narayanan, Kexin Rong, Sahaana Suri. <br /><i>SIGMOD 2017.</i> To appear.
       </div>
     </div>
 
@@ -95,36 +67,14 @@
         <a href="http://stellar.mit.edu/S/course/6/sp15/6.046J/index.html"><b>Design and Analysis of Algorithms</b></a> (6.046) in Spring 2015.
         <br>
         <br>
-        In the past, I have been a Lab Assistant for <b>Elements of Software Construction</b> (6.005) and <b>Introduction to EECS I</b> (6.01).
-      </div>
-    </div>
-
-    <div id='internships'>
-      <div class='heading'>Internships</div>
-      <div class='content'>
-        <b>Systems Research Group, Microsoft Research:</b>
-          I primarily worked on building a system that can train Deep Learning models a lot faster, by better utilizing the hardware at our disposal. This remains ongoing work.
-        <br>
-        <br>
-        <b>Bing Ads, Microsoft:</b>
-          I implemented a Machine Learning experimentation framework for the Bing Ads Click Prediction team. The tool I built allowed engineers to experiment with different features much more effectively and efficiently.
-        <br>
-        <br>
-        <b>Data infrastructure team, Pinterest:</b>
-          I helped build a framework that enabled more decisions made at the company to be data-driven. My main project was trying to improve the reliability and efficiency of Pinterests' pipelined data workflows, by moving most workflows off of Amazon's Elastic MapReduce and onto a new platform called Qubole.
-          <br>
-          I also worked on some other smaller projects over the summer, including an addin that allowed our workflow manager to schedule jobs based on priority; and a verification system that allowed us to hold off on running Hadoop jobs until the job's inputs were ready to be consumed on S3.
-        <br>
-        <br>
-        <b>Multilingual Systems group (MLS), Microsoft Research India:</b>
-          I designed and implemented a type-ahead email search system in C# for Microsoft Outlook. Autocompletion is a fairly well-solved problem in web search since most people search the web in largely the same way, but autocompletion in email search is a lot harder, since different people find different emails more important. I built a machine learning model that given an incomplete query, attempted to find the most relevant emails in the user's inbox (this would help us rank different candidate query completions).
+        I have been a Lab Assistant for <b>Elements of Software Construction</b> (6.005) and <b>Introduction to EECS I</b> (6.01).
       </div>
     </div>
 
     <div id='contact'>
       <div class='heading'>Contact me</div>
       <div class='content'>
-        <a href="mailto: deepakn94@gmail.com"><img src="assets/icons/gmail.svg" height="42" width="42"></a>
+        <a href="mailto: deepakn@cs.stanford.edu"><img src="assets/icons/gmail.svg" height="42" width="42"></a>
         <a href="http://facebook.com/deepakn94"><img src="assets/icons/facebook.svg" height="42" width="42"></a>
         <a href="http://github.com/deepakn94"><img src="assets/icons/github.svg" height="42" width="42"></a>
       </div>
